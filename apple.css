@@ -1,0 +1,12 @@
+body{
+    direction: rtl;
+}
+
+.hd {
+    width: 80px;
+    height: 79px;
+  }
+  .hd2 {
+    width: 200px;
+    height: 200px;
+  }
