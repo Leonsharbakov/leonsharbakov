@@ -12,6 +12,8 @@ body{
     height: 200px;
   }
   .back{
+    width: 200px;
+    height: 260px;
     background: rgb(230, 227, 227);
   }
   .m
