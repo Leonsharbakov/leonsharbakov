@@ -1,5 +1,6 @@
 body{
     direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hd {
@@ -10,3 +11,34 @@ body{
     width: 200px;
     height: 200px;
   }
+  .back{
+    background: rgb(230, 227, 227);
+  }
+  .m
+  {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    margin: 0 auto;
+  }
+  
+ .box{
+     width: 200px;
+    height: 200px;
+    
+ }
+ .infobox {
+    float: left;
+    clear: left;
+    border: 1px solid #aaaaaa;
+    background-color: #f9f9f9;
+    color: black;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    padding: 0.2em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+ }
