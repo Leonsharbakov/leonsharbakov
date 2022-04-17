@@ -49,8 +49,45 @@ function PutBlackpawn(cell)
   cell.appendChild(pawn);
 }
 
+function PutwhiteRook(cell)
+{
+  let rook = document.createElement("img");
+  rook.src = "https://upload.wikimedia.org/wikipedia/commons/4/44/Chess_rll45.svg"
+  cell.appendChild(rook);
+}
+function Putwhiteknight(cell)
+{
+  let knight = document.createElement("img");
+  knight.src = "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chess_nll45.svg"
+  cell.appendChild(knight);
+}
+function PutwhiteBishop(cell)
+{
+  let Bishop = document.createElement("img");
+  Bishop.src = "https://upload.wikimedia.org/wikipedia/commons/1/1e/Chess_bll45.svg"
+  cell.appendChild(Bishop);
+}
 
 
+  function PutwhiteQueen(cell)
+  {
+  let Queen = document.createElement("img");
+  Queen.src = "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chess_qll45.svg"
+  cell.appendChild(Queen);
+}
+function PutwhiteKing(cell)
+{
+  let King = document.createElement("img");
+  King.src = "https://upload.wikimedia.org/wikipedia/commons/8/85/Chess_kll45.svg"
+  cell.appendChild(King);
+}
+
+function Putwhitepawn(cell)
+{
+  let pawn = document.createElement("img");
+ pawn.src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Chess_pll45.svg"
+  cell.appendChild(pawn);
+}
 
 
 
@@ -75,7 +112,13 @@ for(let i=0;i<BORDEER_SIZE; i++)
     if(i==0 && j==3){           PutBlackQueen(cell)};
     if(i==0 && j==4){           PutBlackKing(cell)};
     if(i==1 ){PutBlackpawn(cell)};
-    
+
+    if(i===6){ Putwhitepawn(cell)};
+    if(i===7&&(j===0||j===7)){PutwhiteRook(cell)};
+    if(i===7&&(j===1||j===6)){Putwhiteknight(cell)};
+    if(i===7&&(j===2||j===5)){PutwhiteBishop(cell)};
+    if(i===7&&j===3){PutwhiteQueen(cell)};
+    if(i===7&&j===4){ PutwhiteKing(cell)};
 
     if((i+j) % 2 ==0){
       cell.className='w'}
