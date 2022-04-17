@@ -6,18 +6,27 @@
 .w{
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: wheat;
     
 }
 .b{
 
     width: 80px;
     height: 80px;
-    background-color: black;
+    background-color: grey;
 }
     
 .clicked{
     background-color: blue;
 }
+.click{
+    border: solid yellow;
+    
+}
+img{
+    width: 83px;
+    height: 83px; 
+}
+
 
 
