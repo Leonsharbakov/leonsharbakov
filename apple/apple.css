@@ -14,6 +14,17 @@ body{
     height: 200px;
 
   }
+  .hd3 {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+    font-weight: normal;
+  }
+  .r{
+    font-size: 13px;
+  }
   .back{
     border: 1px solid black;
     width: 200px;
