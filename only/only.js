@@ -12,19 +12,19 @@ function  clicked(e){
 function PutBlackRook(cell)
 {
   let rook = document.createElement("img");
-  rook.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Chess_rdl45.svg/68px-Chess_rdl45.svg.png"
+  rook.src = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg"
   cell.appendChild(rook);
 }
 function PutBlackknight(cell)
 {
   let knight = document.createElement("img");
-  knight.src = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Chess_ndl45.svg"
-  cell.appendChild(knight);
+  knight.src = "https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg"
+  cell.appendChild(knight);h
 }
 function PutBlackBishop(cell)
 {
   let Bishop = document.createElement("img");
-  Bishop.src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chess_bdl45.svg"
+  Bishop.src = "https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg"
   cell.appendChild(Bishop);
 }
 
@@ -32,39 +32,39 @@ function PutBlackBishop(cell)
   function PutBlackQueen(cell)
   {
   let Queen = document.createElement("img");
-  Queen.src = "https://upload.wikimedia.org/wikipedia/commons/1/1b/Chess_qdl45.svg"
+  Queen.src = "https://upload.wikimedia.org/wikipedia/commons/4/47/Chess_qdt45.svg"
   cell.appendChild(Queen);
 }
 function PutBlackKing(cell)
 {
   let King = document.createElement("img");
-  King.src = "https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_kdl45.svg"
+  King.src = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg"
   cell.appendChild(King);
 }
 
 function PutBlackpawn(cell)
 {
   let pawn = document.createElement("img");
- pawn.src = "https://upload.wikimedia.org/wikipedia/commons/0/07/Chess_pdl45.svg"
+ pawn.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg"
   cell.appendChild(pawn);
 }
 
 function PutwhiteRook(cell)
 {
   let rook = document.createElement("img");
-  rook.src = "https://upload.wikimedia.org/wikipedia/commons/4/44/Chess_rll45.svg"
+  rook.src = "https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg"
   cell.appendChild(rook);
 }
 function Putwhiteknight(cell)
 {
   let knight = document.createElement("img");
-  knight.src = "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chess_nll45.svg"
+  knight.src = "https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg"
   cell.appendChild(knight);
 }
 function PutwhiteBishop(cell)
 {
   let Bishop = document.createElement("img");
-  Bishop.src = "https://upload.wikimedia.org/wikipedia/commons/1/1e/Chess_bll45.svg"
+  Bishop.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg"
   cell.appendChild(Bishop);
 }
 
@@ -72,20 +72,20 @@ function PutwhiteBishop(cell)
   function PutwhiteQueen(cell)
   {
   let Queen = document.createElement("img");
-  Queen.src = "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chess_qll45.svg"
+  Queen.src = "https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg"
   cell.appendChild(Queen);
 }
 function PutwhiteKing(cell)
 {
   let King = document.createElement("img");
-  King.src = "https://upload.wikimedia.org/wikipedia/commons/8/85/Chess_kll45.svg"
+  King.src = "https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt45.svg"
   cell.appendChild(King);
 }
 
 function Putwhitepawn(cell)
 {
   let pawn = document.createElement("img");
- pawn.src = "https://upload.wikimedia.org/wikipedia/commons/8/86/Chess_pll45.svg"
+ pawn.src = "https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg"
   cell.appendChild(pawn);
 }
 
