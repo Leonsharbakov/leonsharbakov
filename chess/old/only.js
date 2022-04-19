@@ -6,6 +6,7 @@ function clicked(e) {
   e.classList.add('click');
   if (a != undefined) { a.classList.remove('click') }
   a = e
+
 }
 
 
@@ -37,6 +38,14 @@ class piece {
     else if (this.type === King) { }
     else if (this.type === Pawn) { }
     else { console.log("unknown type" + this.type) }
+  }
+
+}
+class BoardData {
+  constructor(pieces)
+  {
+    this.pieces=pieces
+
   }
 
 }
