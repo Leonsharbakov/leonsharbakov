@@ -1,43 +1,45 @@
-body{
-    direction: rtl;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hd {
-    width: 80px;
-    height: 79px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .hd2 {
-    width: 200px;
-    height: 200px;
+  width: 80px;
+  height: 79px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  }
-  .hd3 {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: gainsboro;
-    font-weight: normal;
-  }
-  .r{
-    font-size: 13px;
-  }
-  .back{
-    border: 1px solid black;
-    width: 200px;
-    height: 300px;
-    background: rgb(230, 227, 227);
-    padding: right 4px left 4px bottom 7px;
-  }
+.hd2 {
+  width: 200px;
+  height: 200px;
 
-  
- .box{
-     width: 200px;
-    height: 200px;
-    
- }
- 
- 
+}
+
+.hd3 {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: gainsboro;
+  font-weight: normal;
+}
+
+.r {
+  font-size: 13px;
+}
+
+.back {
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+  background: rgb(230, 227, 227);
+  padding: right 4px left 4px bottom 7px;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+
+}
