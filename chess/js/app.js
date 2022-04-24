@@ -28,13 +28,13 @@ class Piece {
     } else if (this.type === ROOK) {
       relativeMoves = this.getRookRelativeMoves();
     } else if (this.type === KNIGHT) {
-      
+      relativeMoves = this.getknightRelativeMoves();
     } else if (this.type === BISHOP) {
-      // TODO: Get moves
+      relativeMoves = this.getBishopRelativeMoves();
     } else if (this.type === KING) {
-      // TODO: Get moves
+      relativeMoves = this.getkingRelativeMoves();
     } else if (this.type === QUEEN) {
-      // TODO: Get moves
+      relativeMoves = this.getQueenRelativeMoves()
     } else {
       console.log("Unknown type", type)
     }
@@ -61,8 +61,61 @@ class Piece {
   }
 
   getPawnRelativeMoves() {
-    // TODO: Give different answer to black player
+    if(this.player=BLACK_PLAYER)
+    {return [[-1, 0]];}
+    else
     return [[1, 0]];
+  }
+  getBishopRelativeMoves() {
+    let result = [];
+    for (let i = 1; i < 2; i++) {
+      result.push([i, -1]);
+      result.push([i, 1]);
+      result.push([-I, 1]);
+      result.push([-I, 1]);
+    }
+    return result;
+  }
+
+
+  getknightRelativeMoves() {
+    let result = [];
+    for (let i = 2; i < 3; i++) {
+      result.push([i, -1]);
+      result.push([i, 2]);
+      result.push([-I, -1]);
+      result.push([-I, 2]);
+    }
+    return result;
+  }
+
+  getkingRelativeMoves() {
+    for (let i = 1; i < 3; i++) {
+      let result = [];
+      result.push([i, 1])
+      result.push([i, -1])
+      result.push([i, 2])
+      result.push([-i, 1])
+      result.push([-i, -1])
+      result.push([-i, 2])
+    }
+    return result;
+  }
+  getQueenRelativeMoves() {
+    for (let i = 1; i < 3; i++) {
+      let result = [];
+      result.push([i, -1]);
+      result.push([i, 2]);
+      result.push([-I, -1]);
+      result.push([-I, 2]);
+      result.push([i, 1])
+      result.push([i, -1])
+      result.push([i, 2])
+      result.push([-i, 1])
+      result.push([-i, -1])
+      result.push([-i, 2])
+    }
+    return result;
   }
 
   getRookRelativeMoves() {
@@ -82,7 +135,7 @@ class BoardData {
     this.pieces = pieces;
   }
 
-  // Returns piece in row, col, or undefined if not exists.
+
   getPiece(row, col) {
 
   }
@@ -131,7 +184,7 @@ function onCellClick(event, row, col) {
       console.log(piece);
       let possibleMoves = piece.getPossibleMoves();
       for (let possibleMove of possibleMoves)
-      table.rows[possibleMove[0]].cells[possibleMove[1]].classList.add('possible-move');
+        table.rows[possibleMove[0]].cells[possibleMove[1]].classList.add('possible-move');
     }
   }
 
