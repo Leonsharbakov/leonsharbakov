@@ -3,19 +3,20 @@ table {
 }
 
 .light-cell {
-  background: rgb(211, 210, 210);
+  background: wheat;
   width: 45px;
   height: 45px;
 }
 
 .dark-cell {
-  background: rgb(63, 63, 63);
+  background: grey;
   width: 45px;
   height: 45px;
 }
 
 .selected {
-  background: rgb(197, 197, 83);
+  border: solid yellow;
+    
 }
 
 .possible-move {
