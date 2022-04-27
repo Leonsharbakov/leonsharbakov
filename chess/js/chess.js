@@ -15,7 +15,7 @@ const CHESS_BOARD_ID = 'chess-board';
 let gmae;
 let table;
 let selectedPiece;
-
+let beforePiece;
 function addImage(cell, player, name) {
   const image = document.createElement('img');
   image.src = 'images/' + player + '/' + name + '.png';
@@ -48,6 +48,7 @@ function onCellClick(row, col) {
   } else {
 
     if (game.tryMove(selectedPiece, row, col)) {
+      beforePiece = selectedPiece;
       selectedPiece = undefined;
 
       createChessBoard(game.boardData);
@@ -87,6 +88,16 @@ function createChessBoard(boardData) {
   for (let piece of boardData.pieces) {
     const cell = table.rows[piece.row].cells[piece.col];
     addImage(cell, piece.player, piece.type);
+  }
+  if (game.winner !== undefined) {
+
+    const theWinner = document.createElement('div');
+    //const  Winner = game.winner.charAt(0).toUppercase() +game.winner.slice(1);
+
+    theWinner.textContent = beforePiece.player + ' player wins!!!';
+    theWinner.classList.add('winner');
+    table.appendChild(theWinner);
+
   }
 }
 

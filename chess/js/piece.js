@@ -14,7 +14,7 @@ class Piece {
     }
   
     getPossibleMoves(boardData) {
-      // Get moves
+      
       let moves;
       if (this.type === PAWN) {
         moves = this.getPawnMoves(boardData);
@@ -32,7 +32,7 @@ class Piece {
         console.log("Unknown type", type)
       }
   
-      // Get filtered absolute moves
+      
       let filteredMoves = [];
       for (const absoluteMove of moves) {
         const absoluteRow = absoluteMove[0];
@@ -89,14 +89,12 @@ class Piece {
           result.push([row, col]);
         } else if (boardData.isPlayer(row, col, this.getOpponent())) {
           result.push([row, col]);
-          console.log("opponent");
           return result;
         } else if (boardData.isPlayer(row, col, this.player)) {
-          console.log("player");
+          
           return result;
         }
       }
-      console.log("all empty");
       return result;
     }
   
