@@ -1,10 +1,11 @@
 table {
+  background-color: rgba(232, 255, 127, 0.614);
   position: relative;
   margin: 20px;
 
 }
 .name{
-  font-size: large;
+  font-size: 50px;
   right: 50%;
 
 }
@@ -24,7 +25,7 @@ table {
 }
 
 .selected {
-  border: solid yellow;
+  background-color: rgba(208, 208, 16, 0.477);
 
 }
 
